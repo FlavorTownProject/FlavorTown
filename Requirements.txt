@@ -1,0 +1,16 @@
+Rating
+  - Simple calculate
+Menu Items
+  - Data Entry
+  - Menu Tags
+Restaurant Locations
+
+- Questionable
+  - Best Item Popup
+
+- Additional
+Mood of the Week
+Best in Town
+Restaurant Reccomendation
+Comments
+Top 10 (Algorithm)
