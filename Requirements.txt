@@ -3,7 +3,13 @@ Rating
 Menu Items
   - Data Entry
   - Menu Tags
+  - Filtering Items
 Restaurant Locations
+User Accounts
+ - history
+ - preferences
+ - restrictions
+ - super users
 
 - Questionable
   - Best Item Popup
@@ -13,4 +19,11 @@ Mood of the Week
 Best in Town
 Restaurant Reccomendation
 Comments
+  -weights
 Top 10 (Algorithm)
+Follow Users
+
+Use Case
+  - Toast Notification once app detects one is in restuarnt
+  - 
+    
