@@ -76,13 +76,9 @@ h4, h5, h6 {
 }
 
 a {
-  color:#C30000;
+  color:#fff;
   font-weight:200;
   text-decoration:none;
-}
-
-a:hover {
-	text-decoration: underline;
 }
 
 a small {
@@ -99,7 +95,7 @@ strong {
 
 ul {
   list-style-position: inside;
-  list-style: disc;
+  list-style: none;
   padding-left: 25px;
 }
 
@@ -107,6 +103,10 @@ ol {
   list-style-position: inside;
   list-style: decimal;
   padding-left: 25px;
+}
+
+li{
+	padding: -10em;
 }
 
 blockquote {
@@ -186,7 +186,6 @@ table {
 }
 
 table {
-  border: 1px solid #ccc;
   margin-bottom: 32px;
   text-align: left;
  }
@@ -202,7 +201,8 @@ th {
 
 td {
   padding: 10px;
-	background: #ccc;
+	background: #FBFAF7;
+	border-bottom: 1px dotted #000;
  }
 
 
@@ -218,6 +218,7 @@ header {
 	background-color: #171717;
 	color: #FDFDFB;
   width:170px;
+  height: 100%;
   float:left;
   position:fixed;
 	border: 1px solid #000;
@@ -227,8 +228,8 @@ header {
 	-moz-border-radius-bottomright: 4px;
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
-	padding: 34px 25px 22px 50px;
-	margin: 30px 25px 0 0;
+	padding: 25px 20px 22px 50px;
+	margin: 0px 25px 0 0;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -258,6 +259,13 @@ a.name {
 	white-space: nowrap;
 }
 
+header hr{
+  border:0;
+  background:#ccc;
+  height:1px;
+  margin:0 0 0px;
+}
+
 header ul {
   list-style:none;
   padding:0;
@@ -265,15 +273,17 @@ header ul {
 
 header li {
 	list-style-type: none;
-  width:132px;
+  width:160px;
   height:15px;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 	line-height: 1em;
-	padding: 6px 6px 6px 7px;
-
+	padding: 6px 6px 6px 6px;
+/**
 	background: #AF0011;
+	
 	background: -moz-linear-gradient(top, #AF0011 0%, #820011 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+  background: -webkit-gradient(linear, left top, left bottom);
   background: -webkit-linear-gradient(top, #AF0011 0%,#820011 100%);
   background: -o-linear-gradient(top, #AF0011 0%,#820011 100%);
   background: -ms-linear-gradient(top, #AF0011 0%,#820011 100%);
@@ -281,29 +291,42 @@ header li {
 
 	border-radius:4px;
   border:1px solid #0D0D0D;
-
-	-webkit-box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
-	box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
+**/
+	/**-webkit-box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
+	box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);**/
 
 }
 
 header li:hover {
-	background: #C3001D;
+	background: #0000ff;
 	background: -moz-linear-gradient(top, #C3001D 0%, #950119 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+/**  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
   background: -webkit-linear-gradient(top, #C3001D 0%,#950119 100%);
   background: -o-linear-gradient(top, #C3001D 0%,#950119 100%);
   background: -ms-linear-gradient(top, #C3001D 0%,#950119 100%);
-  background: linear-gradient(top, #C3001D 0%,#950119 100%);
+  background: linear-gradient(top, #C3001D 0%,#950119 100%);**/
+  -webkit-box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
+	box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
 }
 
 a.buttons {
 	-webkit-font-smoothing: antialiased;
-	background: url(../images/arrow-down.png) no-repeat;
+/**	background: url(../images/arrow-down.png) no-repeat;**/
+	background-size: contain
 	font-weight: normal;
-	text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
-	padding: 2px 2px 2px 22px;
+	padding: 6px 10px 6px 10px;
 	height: 30px;
+		background: #0000ff;
+		/**
+	background: -moz-linear-gradient(top, #0000ff 0%, #950119 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+  background: -webkit-linear-gradient(top, #0000ff 0%,#950119 100%);
+  background: -o-linear-gradient(top, #0000ff 0%,#950119 100%);
+  background: -ms-linear-gradient(top, #0000ff 0%,#950119 100%);
+  background: linear-gradient(top, #0000ff 0%,#950119 100%);**/
+    -webkit-box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
+	box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
+	
 }
 
 a.github {
@@ -311,7 +334,7 @@ a.github {
 }
 
 a.buttons:hover {
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 }
 
